@@ -4,11 +4,59 @@
   <meta charset="UTF-8">
   <title>Simulateur Prêt</title>
   <style>
-    body { margin: 0; font-family: system-ui; background: #f8f9fa; padding: 20px; display: flex; justify-content: center; }
-    .sim { background: white; border-radius: 12px; padding: 24px; width: 300px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-    input { width: 100%; padding: 12px; margin: 8px 0; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box; font-size: 16px; }
-    label { display: block; margin: 12px 0 4px; font-weight: 500; }
-    #result { background: #e8f5e8; padding: 16px; border-radius: 6px; margin-top: 16px; font-size: 18px; font-weight: bold; }
+    * { box-sizing: border-box; }
+    body { 
+      margin: 0; 
+      padding: 20px; 
+      background: transparent; /* Fond transparent */
+      font-family: system-ui, -apple-system, sans-serif;
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+      min-height: 100vh;
+    }
+    .sim { 
+      background: white; 
+      border-radius: 12px; 
+      padding: 24px; 
+      width: 300px; 
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+    }
+    input { 
+      width: 100%; 
+      padding: 12px; 
+      margin: 8px 0; 
+      border: 1px solid #ddd; 
+      border-radius: 6px; 
+      font-size: 16px; 
+    }
+    label { 
+      display: block; 
+      margin: 12px 0 4px; 
+      font-weight: 500; 
+      color: #333;
+    }
+    #result { 
+      background: #e8f5e8; 
+      padding: 16px; 
+      border-radius: 6px; 
+      margin-top: 16px; 
+      font-size: 18px; 
+      font-weight: bold; 
+      color: #0f5132;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 12px;
+    }
+    button:hover { background: #0056b3; }
   </style>
 </head>
 <body>
@@ -48,3 +96,4 @@
   </script>
 </body>
 </html>
+
